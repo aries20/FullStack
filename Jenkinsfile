@@ -61,6 +61,7 @@ pipeline {
     post {
         always {
             // Cleanup steps, if necessary
+            echo "This will always run regardless of build result"
         }
     }
 }
