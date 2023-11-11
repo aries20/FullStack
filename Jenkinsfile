@@ -9,8 +9,8 @@ pipeline {
         MONGO_CONNECTION_URL = credentials('MONGO_CONNECTION_URL')
         JWT_ACCESS_TOKEN_SECRET = credentials('JWT_ACCESS_TOKEN_SECRET')
         JWT_REFRESH_TOKEN_SECRET = credentials('JWT_REFRESH_TOKEN_SECRET')
-        ACCESS_KEY = credentials('aws-access-key')
-        SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
+        ACCESS_KEY = credentials('gymaniac')
+        SECRET_ACCESS_KEY = credentials('gymaniac')
         // DockerHub Credentials
         DOCKERHUB_CREDENTIALS = credentials('Dockerhub')
         SERVER_IMAGE_NAME = 'yashurade20/gymserver'
