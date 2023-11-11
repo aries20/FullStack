@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    ports:
+      - "8000:8000" # Map the port from your server container to a port on the host
+    environment:
+      - NODE_ENV=production
+    # Uncomment the lines below if you're using a .env file in your server
+    # env_file:
+      - ./server/.env
+
+  client:
+    build: ./client
+    ports:
+      - "3000:80" # Map the port from your client container to a port on the host
+    depends_on:
+      - server
